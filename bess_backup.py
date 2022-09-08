@@ -27,10 +27,6 @@ def backup_file(file):
             shutil.copy(file,new_file,follow_symlinks=True)
 
 
-
-with open("to_save_list.txt") as f:
-    in_list = f.readlines()
-
 print("Getting list of files older than 60 days...")
 print("(This may take some time)")
 
